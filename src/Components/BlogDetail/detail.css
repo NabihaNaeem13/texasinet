@@ -1,0 +1,117 @@
+#box {
+    width: 80%;
+    height: auto;
+    margin: 0rem auto 1rem;
+  }
+  #signup-input {
+    width: 50%;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin: 0.5rem 0rem 0.5rem 6rem;
+    background-color: transparent;
+    color: #fff;
+  }
+  #submitbtn {
+    margin: 0.5rem 0rem 0.5rem 6rem;
+    border: 0;
+    font-size: 14px;
+    height: 34px;
+    background: white;
+    padding: 7px 12px;
+    font-weight: 700;
+    color: black;
+  }
+  #bottomCheck {
+    margin-left: 6rem;
+    margin-right: 0.3rem;
+  }
+  #capcheck {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 2rem 1rem;
+  }
+  .captchabox {
+    width: 50%;
+    height: 5.4rem;
+    display: flex;
+    background-color: #fff;
+    margin: 0.5rem 0rem 0.5rem 6rem;
+    border-radius: 5px;
+  }
+  #captch-img {
+    background: url(https://www.gstatic.com/recaptcha/api2/logo_48.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+  }
+  
+  .rc-anchor-logo-text {
+    cursor: default;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    margin-top: 40px;
+    text-align: left;
+  }
+  .rc-anchor-pt a {
+    color: #555;
+    display: inline;
+    padding-left: 0px;
+    padding-right: 1px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .recaptcha-checkbox-spinner {
+    background-color: #f9f9f9;
+    border: 6px solid #4d90fe;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    height: 36px;
+    left: -4px;
+    outline: 0;
+    position: absolute;
+    top: -4px;
+    width: 36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 0;
+    -webkit-animation: spinner-spin linear 2.5s infinite;
+    -o-animation: spinner-spin linear 2.5s infinite;
+    animation: spinner-spin linear 2.5s infinite;
+    animation-play-state: paused;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+  }
+  @media (max-width: 487px) and (min-width: 300px) {
+    #signup-input {
+      margin: 0.5rem 0rem 0.5rem 2rem;
+      width: 75%;
+      height: 2.5rem;
+    }
+    #bottomCheck {
+      margin-left: 2rem;
+    }
+    .captchabox {
+      margin: 0.5rem 0rem 0.5rem 2rem;
+      width: 75%;
+    }
+    .rc-anchor-logo-text,
+    .rc-anchor-pt a {
+      font-size: 8px;
+    }
+    #submitbtn {
+      margin: 0.5rem 0rem 0.5rem 2rem;
+    }
+    .wave-title {
+      padding-bottom: 1rem;
+    }
+  }
+  

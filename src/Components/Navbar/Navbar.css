@@ -1,0 +1,116 @@
+.topbar-container {
+  background-color: #002c6f;
+  position: sticky;
+  display: flex;
+  width: 100%;
+  min-height: 2rem;
+}
+.top-col {
+  width: 20%;
+  text-align: center;
+  padding: 5px;
+}
+.top-col:hover {
+  background-color: #000;
+  text-decoration: underline;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+.border-title {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.top-col1 {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+  padding: 5px;
+}
+.title {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-logo {
+  width: 100%;
+  height: 3.5rem;
+}
+@media (min-width: 487px) and (max-width: 1024px) {
+  .topbar-container {
+    display: none;
+  }
+  .nav-container {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 487px) {
+  .topbar-container {
+    display: none;
+  }
+}
+/*menu style*/
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: right;
+  margin-right: 15%;
+}
+.logo {
+  margin-left: 10%;
+}
+.menu-link.active {
+  color: #fff !important;
+  background-color: #002c6f;
+}
+.menu-link.active:hover {
+  color: #fff !important;
+  background-color: #002c6f;
+  border: none;
+}
+.menu-link {
+  padding: 10px 5px;
+  padding-bottom: 15px;
+  margin: 0px 15px;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.menu-link:hover {
+  border-bottom: 3px solid #002c6f;
+  color: #000;
+}
+@media (max-width: 487px) and (min-width: 300px) {
+  .nav-container {
+    top: 0;
+    position: fixed;
+  }
+  .navbar-light .navbar-toggler-icon {
+    color: #fff;
+  }
+  .navbar-light .navbar-toggler {
+    background-color: #002c6f !important;
+    border-color: #002c6f;
+    border-radius: 0px;
+  }
+  .menu-link {
+    text-align: left;
+  }
+}
+

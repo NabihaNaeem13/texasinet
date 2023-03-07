@@ -1,0 +1,226 @@
+.service-para {
+  font-size: 1.5rem;
+  margin: 2.5rem;
+  color: black;
+}
+.services-title {
+  color: #000000;
+  font-family: "Trirong", Sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.services-title {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif, Sans-serif;
+  font-size: 39px;
+  font-weight: 500;
+}
+.service-para1 {
+  text-align: center;
+  color: #7a7a7a;
+  font-family: "Poppins", Sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+.service-ul {
+  color: #7a7a7a;
+  font-family: "Poppins", Sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+#service-sub-title {
+  color: #ce0000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+.read-more {
+  width: 100%;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: #585252;
+  background: #fff;
+  border: 1px solid #000;
+}
+@media screen and (max-width: 998px) {
+  .services-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  .service-para {
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+  }
+  #service-sub-title {
+    font-size: 1rem;
+  }
+  #questiontitle {
+    font-size: 1rem;
+  }
+  .service-wave-2 {
+    margin: 0rem;
+  }
+  .size-large {
+    width: 100%;
+    height: 100%;
+  }
+}
+#questiontitle {
+  color: #ea0d0d;
+  font-family: "Times New Roman", Sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+#check-box {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+#checkbox-input {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: 12px;
+  border: none;
+  outline: none;
+}
+#service-wave {
+  background-image: url(https://www.texasinet.com/wp-content/uploads/2021/09/Here-We-Are-bg-8-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+.service-wave-title {
+  padding: 6rem 0rem 0rem 0rem;
+  color: #000000;
+  font-family: Times;
+  font-size: 61px;
+  font-weight: 400;
+}
+.service-wave-2 {
+  background: color;
+  margin: 0rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-box {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Hide the default checkbox */
+#checkbox {
+  visibility: hidden;
+}
+
+/* Creating a custom checkbox
+based on demand */
+.geekmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #002c6f;
+}
+
+/* Specify the background color to be
+shown when hovering over checkbox */
+.main-box:hover input ~ .geekmark {
+  background-color: rgb(133, 133, 127);
+}
+
+/* Specify the background color to be
+shown when checkbox is active */
+.main-box input:active ~ .geekmark {
+  background-color: rgb(133, 133, 127);
+}
+
+/* Specify the background color to be
+shown when checkbox is checked */
+.main-box input:checked ~ .geekmark {
+  background-color: rgb(255, 153, 0);
+}
+
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Display checkmark when checked */
+.main-box input:checked ~ .geekmark:after {
+  display: block;
+}
+
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.main-box .geekmark:after {
+  left: 8px;
+  bottom: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#service-contact {
+  height: 4rem;
+  width: 18rem;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #ce0000;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10rem;
+}
+@media (max-width: 486px) and (min-width: 300px) {
+  #questiontitle {
+    font-size: 26px;
+  }
+  #service-contact {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+  }
+  #service-sub-title {
+    font-size: 19px;
+    text-align: center;
+    margin: 12px 0px;
+  }
+  #service-wave-title {
+    font-size: 43px;
+  }
+  .service-wave-2 {
+    margin: 0rem;
+  }
+  #service-wave {
+    height: auto;
+  }
+  .place {
+    max-width: 90%;
+  }
+  .service-para {
+    margin: 2rem 0rem;
+  }
+}
